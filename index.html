@@ -24,8 +24,19 @@ hr {
 /* Jumbotron (hero) */
 .jumbotron {
   position: relative;
-  background: url(http://source.unsplash.com/466ENaLuhLY/1920x1080) no-repeat bottom center/cover;
+  
+  background: url("net.jpeg") no-repeat bottom center/cover;
+  /*http://source.unsplash.com/466ENaLuhLY/1920x1080*/
 }
+
+.jumbotronpart2 {
+  position: relative;
+  padding: 75px ;
+  
+  background: url("gray-box.jpg") no-repeat bottom center/cover;
+  /*http://source.unsplash.com/466ENaLuhLY/1920x1080*/
+}
+
 .jumbotron:before {
   position: absolute;
   content: '';
@@ -112,12 +123,65 @@ hr {
   color: rgba(255, 255, 255, 0.25);
 }
 
-    </style>
+.team-section{
+    width:1200px;
+}
+@media only screen and (max-width: 900px){
+    .team-section { width: 90%; }
+}
+@media only screen and (max-width: 520px){
+    .team-section { width: 50%; }
+}
+.team-row{
+  margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+}
 
-  
-  
-  
-  
+.team-row > li{
+  position: relative;
+  display: inline-block;
+}
+
+
+.team-profile{
+  display: inline;
+  margin: 20px 50px;
+  width: 180px;
+  /*list-style: none;*/
+  text-align: center;
+}
+
+.team-profile a{
+  color: #000;
+}
+
+.team-profile a:hover{
+  color: #49b7a8;     /* jade */
+}
+
+.team-profile-img{
+  width: 200px;
+  height: 210px;
+  border-radius: 150px;
+}
+.sponsor-profile-img{
+  width: 280px;
+  height: 180px;
+
+}
+.sponsor-profile-img2{
+  width: 320px;
+  height: 210px;
+
+}
+
+.team-name{
+  padding: 30px 0 0 0;
+  font-weight: lighter;
+}
+
+    </style>
 
 </head>
 
@@ -138,12 +202,14 @@ hr {
             <ul class="navbar-nav">
 
               <li class="nav-item">
-                <a class="nav-link" href="#sec-about">About</a>
+                <a class="nav-link" href="#sec-about">Team</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#sec-pricing">FAQ</a>
               </li>
 
-
               <li class="nav-item">
-                <a class="nav-link" href="mailto:tejpalv8@gmail.com">Contact</a>
+                <a class="nav-link" href="mailto:nextgenai.mail@gmail.com">Contact</a>
               </li>
               
             </ul>
@@ -158,22 +224,21 @@ hr {
           <div class="col-md-10 col-lg-6">
             <h1 class="display-5">NextGen AI</h1>
 
-            <p class="lead">A six-month program that will make you an expert in the realm of artificial intelligence and machine learning. You will have the opportunity to work on projects with cutting-edge AI researchers. Text @nextgenai to 81010 to receive reminders.</p>
+            <p class="lead">A six-month program, starting April 22, that will make you an expert in the realm of artificial intelligence and machine learning. You will have the opportunity to work on projects with cutting-edge AI researchers. Text @nextgenai to 81010 to receive reminders.</p>
             <a class="btn btn-primary btn-lg" href="https://goo.gl/forms/FvyIaIsbT3hbRzV12" role="button">Sign Up</a>
-            
+
+
           </div>
         </div>
       </div>
     </div>
   </section>
 
-<br>
-<br>
   <section id="sec-about" class="sec-about pt-5 pb-5">
     <div class="container">
       <div class="row justify-content-center text-center">
         <div class="col-md-10 col-lg-8">
-          <h1 class="h4">About us</h1>
+          <h1 class="h4">Mission</h1>
           <p class="mt-4 mb-4">Our goal is to create a resourceful space where teens can learn about AI and work on projects in Machine Learning. We hope to inspire the next generation through early exposure in AI by providing free GPU power, access to large datasets, as well as mentorship from experts in the field.
             <br>
             <br>
@@ -187,12 +252,34 @@ hr {
 
 
     </div>
+
   </section>
 
+    <section id="team-section" class="container content-section text-center">
+        <div class="container" style="margin:0; padding:0;">
+            <div class="team">
+                <h1 class="h4">Team</h1>
+                <ul class="team-row">
+                    <li class="team-profile">
+                        <a target="_blank"><img class="team-profile-img" src="profile-pic copy.jpg">
+                        <h4 class="team-name">Tejpal Virdi</h4>
+                        </a>
+                    </li>
+                    <li class="team-profile">
+                        <a target="_blank"><img class="team-profile-img" src="john.png">
+                        <h4 class="team-name">John Guibas</h4>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+<br>
+<br>
+<br>
 
-  <br>
   <section id="sec-pricing" class="sec-pricing">
-    <div class="container">
+    <div class="jumbotronpart2" >
       
       <div class="row justify-content-center">
         <div class="col-md-4">
@@ -225,7 +312,7 @@ hr {
               <h4 class="card-title h5">When</h4>
 
 
-              <p class="card-text">Every Sunday from 1-2:30pm starting April 22</p>
+              <p class="card-text">Every Sunday from 1-2:30pm <br>starting April 22</p>
 
             </div>
           </div>
@@ -234,8 +321,7 @@ hr {
     </div>
   </section>
   <br>
-  <br>
-  <br>
+
   <br>
 
 <section class="bg-dark" id="map">
@@ -244,8 +330,28 @@ hr {
 </center>
     </section>
 
-    <br>
+<br>
+<br>
+<section id="team-section" class="container content-section text-center">
+        <div class="container" style="margin:0; padding:0;">
+            <div class="team">
+                <h1 class="h4">Sponsors</h1>
+                <ul class="team-row">
+                    <li class="team-profile2">
+                        <a target="_blank"><img class="sponsor-profile-img" src="paloaltologo.jpg">
+                        </a>
+                    </li>
+                    <li class="team-profile">
+                        <a target="_blank"><img class="sponsor-profile-img2" src="thinkfundlogo.png">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
 
+    <br>
+<br>
   <footer class="footer">
     <div class="container">
       <ul class="list-inline mb-0 text-center">
@@ -262,7 +368,7 @@ hr {
         </li>
         
         <li class="list-inline-item">
-          <a href="mailto:tejpalv8@gmail.com"><span class="fa fa-envelope-o"></span></a>
+          <a href="mailto:nextgenai.mail@gmail.com"><span class="fa fa-envelope-o"></span></a>
         </li>
       </ul>
     </div>
@@ -272,7 +378,8 @@ hr {
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js'></script>
 
-  
+
+
 
     <script >
       $(function () {
