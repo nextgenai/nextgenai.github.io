@@ -1,2 +1,0 @@
-# nextgenai.github.io
-Website
