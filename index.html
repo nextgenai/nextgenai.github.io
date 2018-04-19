@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="./style/bootstrap-theme.min.css">
   <link href="syllabusstyle.css" rel="stylesheet" type="text/css">
   <link href="./style/newstyle.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
 <style>
@@ -23,6 +24,36 @@ border-radius: 100px;
 margin-left: 10px;
 }
 
+/* Footer */
+.list-unstyled{
+  padding-left:0;list-style:none
+}
+.list-inline{
+  padding-left:0;list-style:none
+}
+.list-inline-item{
+  display:inline-block
+}
+.list-inline-item:not(:last-child){
+  margin-right:5px
+}
+.footer {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  background: #212121;
+}
+.footer li:nth-of-type(n+2) {
+  margin-left: 8px;
+}
+.footer a {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.5);
+  -webkit-transition: color .235s ease-in-out;
+  transition: color .235s ease-in-out;
+}
+.footer a:focus, .footer a:hover {
+  color: rgba(255, 255, 255, 0.25);
+}
 .center {
     display: block;
     margin-left: auto;
@@ -328,7 +359,27 @@ This is the syllabus for the <b>2018</b> iteration of the course.
 
 </section>
   
-
+  <footer class="footer">
+    <div class="container">
+      <ul class="list-inline mb-0 text-center">
+<!--         <li class="list-inline-item">
+          <a href=""><span class="fa fa-twitter"></span></a>
+        </li> -->
+        
+<!--         <li class="list-inline-item">
+          <a href=""><span class="fa fa-google-plus"></span></a>
+        </li> -->
+        
+        <li class="list-inline-item">
+          <a href="https://www.facebook.com/nextgenai/"><span class="fa fa-facebook"></span></a>
+        </li>
+        
+        <li class="list-inline-item">
+          <a href="mailto:nextgenai.mail@gmail.com"><span class="fa fa-envelope-o"></span></a>
+        </li>
+      </ul>
+    </div>
+  </footer>
 
 
   </body>
