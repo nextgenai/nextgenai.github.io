@@ -5,32 +5,8 @@ body {
   margin: 0;
   font-size: 16px;
 }
-#header {
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-#teaser {
-  height: 410px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 3px;
-  padding-right: 3px;
-  background-color: #8C1515;
-  position: relative;
-  overflow: hidden;
-  color: white;
-  font-size: 16px;
-  text-align: center;
-}
-h1 {
-  font-size: 30px;
-  font-weight: 300;
-  text-align: center;
-}
-h2 {
-  font-size: 25px;
-  font-weight: 300;
-}
+
+
 .lhead {
   font-weight: normal;
   margin-top: 5px;
